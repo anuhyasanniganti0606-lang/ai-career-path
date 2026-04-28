@@ -1,0 +1,186 @@
+/* Background */
+body.bg{
+margin:0;
+font-family:'Poppins',sans-serif;
+background: linear-gradient(135deg,#06131b,#afa8b6);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+/* Glass Card (login/dashboard) */
+.card{
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(15px);
+padding:30px;
+border-radius:20px;
+width:350px;
+text-align:center;
+color:white;
+box-shadow:0 10px 40px rgba(0,0,0,0.3);
+animation: fadeIn 1s ease;
+}
+
+.card.big{
+width:400px;
+}
+
+
+/* Inputs */
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+
+/* Buttons */
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background: linear-gradient(90deg,#ff758c,#ff7eb3);
+color:rgb(218, 209, 209);
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+
+/* Logout button */
+.logout{
+margin-top:15px;
+background:linear-gradient(90deg,#ff4e50,#f00000);
+}
+
+
+/* Result */
+#result{
+margin-top:15px;
+font-size:18px;
+font-weight:bold;
+}
+
+
+/* Animation */
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+
+/* Career Page Container */
+.career-container{
+background:white;
+padding:40px;
+border-radius:20px;
+width:60%;
+max-width:700px;
+margin:40px auto;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+animation: fadeIn 0.8s ease;
+}
+
+
+/* Career Title */
+#careerTitle{
+color:#222;
+text-align:center;
+font-size:38px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+
+/* Career Details */
+#careerDetails{
+color:#333;
+font-size:18px;
+line-height:32px;
+}
+
+
+/* Sub headings */
+#careerDetails h3{
+color:#111;
+margin-top:20px;
+}
+
+
+/* List items */
+#careerDetails li{
+margin:8px 0;
+}
+
+
+/* Back button spacing */
+.career-container button{
+margin-top:25px;
+}
+
+
+/* ================= 🔥 ROADMAP DIAGRAM ================= */
+
+.roadmap{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-top:15px;
+justify-content:center;
+}
+
+.step{
+background: linear-gradient(135deg,#2196F3,#21CBF3);
+color:white;
+padding:10px 15px;
+border-radius:10px;
+position:relative;
+font-weight:500;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.step:hover{
+transform:scale(1.05);
+}
+
+/* Arrow */
+.step::after{
+content:"→";
+position:absolute;
+right:-18px;
+top:50%;
+transform:translateY(-50%);
+color:#333;
+font-size:18px;
+}
+
+/* Remove last arrow */
+.step:last-child::after{
+content:"";
+}
+
+/* Alternate colors */
+.step:nth-child(odd){
+background: linear-gradient(135deg,#ff758c,#ff7eb3);
+}
+
+.step:nth-child(even){
+background: linear-gradient(135deg,#43cea2,#185a9d);
+}
